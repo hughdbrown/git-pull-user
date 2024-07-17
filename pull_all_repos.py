@@ -27,8 +27,11 @@ def pull_repos(username, page_no):
     if resp.status_code == 200:
         data = resp.json()
         for block in data:
-            repo_name = block['name']
-            print(f"git clone {github_base}/{repo_name}")
+            forked = block['fork']
+            if not forked:
+                repo_name = block['name']
+                print(f"git clone {github_base}/{repo_name}")
+            # Count based on whether repo info was pulled, not whether repo was cloned
             i += 1
     return i
 
