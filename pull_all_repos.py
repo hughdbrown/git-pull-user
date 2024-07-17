@@ -15,6 +15,7 @@ def make_work_dir(username):
     if not local_base.exists():
         print(f"mkdir -p {str(local_base)}")
     print(f"cd {str(local_base)}")
+    print()
 
 def pull_repos(username, page_no):
     print(f"# {page_no = }")
@@ -31,9 +32,16 @@ def pull_repos(username, page_no):
             i += 1
     return i
 
+def print_shell_header():
+    print("#!/bin/bash")
+    print("set -eux")
+    print("set -o pipefail")
+    print()
+
 @click.command()
 @click.option('--username', required=True, help="Name of github user whose repos will be cloned")
 def main(username):
+    print_shell_header()
     make_work_dir(username)
     for i in itertools.count(start=1):
         if not pull_repos(username, i):
