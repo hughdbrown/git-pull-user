@@ -3,14 +3,9 @@
 from pathlib import Path
 import itertools
 import json
-import logging
 
 import click
 import requests
-
-FORMAT = '%(asctime)s %(message)s'
-logging.basicConfig(format=FORMAT, datefmt="%Y-%m-%dT%H:%M:%S", level=logging.INFO)
-logger = logging.getLogger()
 
 HEADERS = {'Accept': 'application/json'}
 
