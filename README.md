@@ -13,5 +13,8 @@ API call, this script emits shell commands to be run in bash.
 ```
 
 # Known bugs
-- Not idempotent
+- Not idempotent:
 If a generated script is run twice, it will try to clone repos twice, and so will fail.
+- No clever recovery:
+If a user repo uses `git-lfs`, say, on a system that does not have `git-lfs` installed, the generated script does not install the 
+requirement and  does not recover gracefully.
