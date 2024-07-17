@@ -28,8 +28,13 @@ def pull_repos(username, page_no):
         data = resp.json()
         for block in data:
             forked = block['fork']
-            if not forked:
-                repo_name = block['name']
+            repo_name = block['name']
+            p = Path(f"~/workspace/{username}/{repo_name}")
+            if p.exists():
+                print(f"# Skipping {repo_name}: directory already exists")
+            elif forked:
+                print(f"# Skipping {repo_name}: forked")
+            else:
                 print(f"git clone {github_base}/{repo_name}")
             # Count based on whether repo info was pulled, not whether repo was cloned
             i += 1
