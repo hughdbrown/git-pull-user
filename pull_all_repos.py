@@ -11,6 +11,7 @@ HEADERS = {'Accept': 'application/json'}
 
 
 def make_work_dir(username):
+    """ Make the workdir for the selected user """
     local_base = Path(f"~/workspace/{username}")
     if not local_base.exists():
         print(f"mkdir -p {str(local_base)}")
@@ -18,6 +19,7 @@ def make_work_dir(username):
     print()
 
 def pull_repos(username, page_no):
+    """ Write bash script to clone repos """
     print(f"# {page_no = }")
     i = 0
     github_base = f"https://github.com/{username}"
@@ -41,6 +43,7 @@ def pull_repos(username, page_no):
     return i
 
 def print_shell_header():
+    """ Write the header of the shell script """
     print("#!/bin/bash")
     print("set -eux")
     print("set -o pipefail")
