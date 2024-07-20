@@ -18,3 +18,12 @@ If a generated script is run twice, it will try to clone repos twice, and so wil
 - No clever recovery:
 If a user repo uses `git-lfs`, say, on a system that does not have `git-lfs` installed, the generated script does not install the 
 requirement and  does not recover gracefully.
+
+# Examples directory
+This directory has a few examples of generated shell scripts to extract the github repos of some of my favorite developers:
+- simonw (Simon Willison)
+- mitsuhiko (Armin Ronacher)
+- wesm (Wes McKinney)
+- alamb (Andrew Lamb)
+- nedbat (Ned Batchelder)
+- dogsheep (which appears to be another user name for Simon Willison)
