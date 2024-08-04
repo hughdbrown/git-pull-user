@@ -21,9 +21,14 @@ requirement and  does not recover gracefully.
 
 # Examples directory
 This directory has a few examples of generated shell scripts to extract the github repos of some of my favorite developers:
-- simonw (Simon Willison)
-- mitsuhiko (Armin Ronacher)
-- wesm (Wes McKinney)
+- simonw (Simon Willison: co-creator of Django, creator of Datasette)
+- mitsuhiko (Armin Ronacher: creator of Flask web framework, jinja template library; rust application rye for python development)
+- wesm (Wes McKinney: creator of Pandas, Arrow)
 - alamb (Andrew Lamb)
-- nedbat (Ned Batchelder)
+- nedbat (Ned Batchelder: creator of pycoverage; frequent PyCon speaker)
 - dogsheep (which appears to be another user name for Simon Willison)
+- hynek (Hynek Schlawack: German python developer, frequent contributor in packaging and security, frequent PyCon speaker)
+- kennethreitz (Kenneth Reitz: creator of requests, pipenv, and pep8)
+- tiangolo (Sebastián Ramírez: creator of FastAPI, Typer, SQLModel)
+- ajdavis (A. Jesse Jiryu Davis)
+- jart (Justine Tunney)
