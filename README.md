@@ -32,3 +32,6 @@ This directory has a few examples of generated shell scripts to extract the gith
 - tiangolo (Sebastián Ramírez: creator of FastAPI, Typer, SQLModel)
 - ajdavis (A. Jesse Jiryu Davis)
 - jart (Justine Tunney)
+- zzzeek (Michael Bayer: creator of SQL Alchemy)
+- teoliphant (Travis Oliphant: NumPy, SciPy, Numba, Conda, PyData, NumFocus, Anaconda)
+- junegunn (creator of fzf)
