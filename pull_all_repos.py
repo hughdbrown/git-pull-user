@@ -2,7 +2,6 @@
 
 from pathlib import Path
 import itertools
-import json
 
 import click
 import requests
