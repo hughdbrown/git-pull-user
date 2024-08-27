@@ -18,7 +18,7 @@ def make_work_dir(username):
     print(f"cd {str(local_base)}")
     print()
 
-def pull_repos(username, page_no):
+def pull_repos(username: str, update: bool, page_no: int):
     """ Write bash script to clone repos """
     print(f"# {page_no = }")
     i = 0
@@ -33,7 +33,10 @@ def pull_repos(username, page_no):
             repo_name = block['name']
             p = Path(f"~/workspace/{username}/{repo_name}")
             if p.exists():
-                print(f"# Skipping {repo_name}: directory already exists")
+                if update:
+                    print(f"(cd {repo_name}; git pull; cd - )")
+                else:
+                    print(f"# Skipping {repo_name}: directory already exists")
             elif forked:
                 print(f"# Skipping {repo_name}: forked")
             else:
@@ -50,12 +53,13 @@ def print_shell_header():
     print()
 
 @click.command()
-@click.option('--username', required=True, help="Name of github user whose repos will be cloned")
-def main(username):
+@click.option('-n', '--name', required=True, type=str, help="Name of github user whose repos will be cloned")
+@click.option('-u', '--update', type=bool, default=False, is_flag=True, help="Update previously cloned repos")
+def main(name, update):
     print_shell_header()
-    make_work_dir(username)
+    make_work_dir(name)
     for i in itertools.count(start=1):
-        if not pull_repos(username, i):
+        if not pull_repos(name, update, i):
             break
 
 if __name__ == '__main__':
