@@ -36,3 +36,4 @@ This directory has a few examples of generated shell scripts to extract the gith
 - teoliphant (Travis Oliphant: NumPy, SciPy, Numba, Conda, PyData, NumFocus, Anaconda)
 - junegunn (creator of fzf)
 - skerkour
+- austin-starks (Medium writer on Rust and trading topics)
