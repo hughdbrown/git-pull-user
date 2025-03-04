@@ -38,3 +38,5 @@ This directory has a few examples of generated shell scripts to extract the gith
 - skerkour
 - austin-starks (Medium writer on Rust and trading topics)
 - AI-Maker-Space
+- ShawhinT: Youtuber and maven.com instructor
+- alex: open source software developer, PyPI dev? 
