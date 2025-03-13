@@ -40,3 +40,8 @@ This directory has a few examples of generated shell scripts to extract the gith
 - AI-Maker-Space
 - ShawhinT: Youtuber and maven.com instructor
 - alex: open source software developer, PyPI dev? 
+- chris-alexiuk
+- chris-alexiuk-1
+- chrisalexiuk-nvidia
+- AI-Maker-Space
+
