@@ -36,7 +36,7 @@ def pull_repos(username: str, update: bool, page_no: int):
         for block in data:
             forked = block['fork']
             repo_name = block['name']
-            p = Path(f"~/workspace/{username}/{repo_name}")
+            p = Path(f"~/workspace/{username}/{repo_name}").expanduser()
             if p.exists():
                 if update:
                     print(f"(cd {repo_name}; git pull; cd - )")
