@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# dependencies = [
+#   "click",
+#   "requests",
+# ]
+# ///
 
 from pathlib import Path
 import itertools
