@@ -45,3 +45,4 @@ This directory has a few examples of generated shell scripts to extract the gith
 - chrisalexiuk-nvidia
 - AI-Maker-Space
 - awdemos
+- disler (indydevdan, a Youtube developer specializing in Gen-AI programming instruction)
