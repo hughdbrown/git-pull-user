@@ -46,3 +46,4 @@ This directory has a few examples of generated shell scripts to extract the gith
 - AI-Maker-Space
 - awdemos
 - disler (indydevdan, a Youtube developer specializing in Gen-AI programming instruction)
+- paiml (Noah Gift)
