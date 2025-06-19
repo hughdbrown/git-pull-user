@@ -47,3 +47,4 @@ This directory has a few examples of generated shell scripts to extract the gith
 - awdemos
 - disler (indydevdan, a Youtube developer specializing in Gen-AI programming instruction)
 - paiml (Noah Gift)
+- letsgetrusty (Bogdan Rust instructor)
