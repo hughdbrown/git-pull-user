@@ -48,3 +48,5 @@ This directory has a few examples of generated shell scripts to extract the gith
 - disler (indydevdan, a Youtube developer specializing in Gen-AI programming instruction)
 - paiml (Noah Gift)
 - letsgetrusty (Bogdan Rust instructor)
+- Kent-Beck (celebrity programmer, renowned for TDD, XP, agile programming)
+- astral-sh (makers of python tools written in Rust [uv, ruff, etc.])
